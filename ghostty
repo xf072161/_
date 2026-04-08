@@ -1,0 +1,19 @@
+background = #151515
+foreground = #D3CEBA
+
+cursor-color = #D3CEBA
+cursor-style = block
+
+macos-titlebar-style = tabs
+shell-integration-features = no-cursor,ssh-terminfo
+
+font-family = "MonoLisa"
+font-feature = -liga,-calt
+font-size = 14
+
+keybind = cmd+shift+[=previous_tab
+keybind = cmd+shift+]=next_tab
+keybind = cmd+[=goto_split:left
+keybind = cmd+]=goto_split:right
+keybind = ctrl+tab=text:\x1b[9;5u
+keybind = ctrl+shift+tab=ignore
