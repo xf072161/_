@@ -1,5 +1,5 @@
 #!/bin/bash
-DOTFILES="$HOME/.dfs"
+DOTFILES="$HOME/dev/personal/_"
 ZSH_PLUGINS="$HOME/.zsh/plugins"
 
 defaults write -g AppleFontSmoothing -int 0
