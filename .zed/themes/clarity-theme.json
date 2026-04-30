@@ -56,10 +56,10 @@
 				],
 				"syntax": {
 					"comment": {
-						"color": "#303030"
+						"color": "#CCCCCC"
 					},
 					"comment.doc": {
-						"color": "#303030"
+						"color": "#CCCCCC"
 					},
 					"keyword": {
 						"color": "#080808"
@@ -110,7 +110,7 @@
 						"color": "#080808"
 					},
 					"function": {
-						"color": "#0000FF"
+						"color": "#080808"
 					},
 					"hint": {
 						"color": "#080808"
@@ -176,7 +176,7 @@
 			}
 		},
 		{
-			"name": "pph dark",
+			"name": "clarity dark",
 			"appearance": "dark",
 			"style": {
 				"players": [
