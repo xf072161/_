@@ -10,17 +10,17 @@ vim.o.background = "dark"
 local ui_white 	 			= "#D3CEBA"
 local ui_white_dimmed	= "#BBBBBB"
 local ui_black 	 			= "#151515"
+local ui_black_soft 	= "#202020"
 local ui_gray_dark 		= "#303030"
 local ui_gray 		 		= "#525252"
 local ui_yellow 	 		= "#FFAF00"
 
 local syntax_pink			= "#F8BFCE"
-local syntax_yellow 	= "#DCDAA3"
 local syntax_blue 		= "#AED7F5"
 local syntax_gray			= "#525252"
 
 local red 		 		= "#F56868"
-local green 	 		= "#C4D9B0"
+local green 	 		= "#acc495"
 local blue 		 		= "#394b70"
 local orange 	 		= "#CC873F"
 local purple 			= "#CCCCF8"
@@ -47,20 +47,8 @@ local highlight_groups = {
   MatchParen 		= 	{ fg = ui_white, bg = ui_gray },
   EndOfBuffer 	= 	{ fg = "bg", bg = "bg" },
 
-	NeoTreeGitUntracked = { fg = orange, italic = false },
-	NeoTreeFileName = { fg = ui_white_dimmed },
-	NeoTreeGitConflict = { fg = purple },
-	NeoTreeCursorLine = { bg = ui_gray_dark },
-
-	-- diagnostics
-  DiagnosticError 					= { fg = red },
-	DiagnosticInfo						= { fg = blue },
-  DiagnosticWarn						= { fg = orange },
-  DiagnosticUnderlineError	= { fg = ui_white, underline = true, sp = red },
-	DiagnosticUnderlineInfo		= { fg = ui_white, underline = true, sp = blue },
-	DiagnosticUnderlineWarn		= { fg = ui_white, underline = true, sp = orange },
-
-	-- basic syntax
+	-- syntax
+  Title 				= 	{ fg = syntax_gray, bg = "NONE" },
   Comment 			= 	{ fg = syntax_gray, bg = "NONE" },
   Constant 			= 	{ fg = ui_white, bg = "NONE" },
   Function 			= 	{ fg = ui_white, bg = "NONE" },
@@ -68,7 +56,7 @@ local highlight_groups = {
   PreProc 			= 	{ fg = ui_white, bg = "NONE" },
   Statement 		= 	{ fg = ui_white, bg = "NONE" },
   Special 			= 	{ fg = ui_white, bg = "NONE" },
-  String 				= 	{ fg = ui_white, bg = "NONE" },
+  String 				= 	{ fg = green, bg = "NONE" },
   Operator 			= 	{ fg = ui_white, bg = "NONE" },
   Type 					= 	{ fg = ui_white, bg = "NONE" },
   ErrorMsg 			= 	{ fg = red, bg = "NONE" },
@@ -78,18 +66,30 @@ local highlight_groups = {
   ["@variable"]	= 	{ fg = ui_white, bg = "NONE" },
   ["@error"] 		= 	{ fg = red, sp = dark_orange, undercurl = true },
   ["@spell"] 		= 	{ fg = syntax_gray, bg = "NONE" },
+  ["@spell.markdown"] 		= 	{ fg = ui_white, bg = "NONE" },
+  ["@markup.raw.block.markdown"] 		= 	{ bg = ui_black_soft },
+  ["@markup.raw.markdown_inline"] 		= 	{ bg = ui_black_soft },
+  ["@markup.heading.1.markdown"] 		= 	{ fg = syntax_blue },
+  ["@markup.heading.2.markdown"] 		= 	{ fg = syntax_blue },
+  ["@markup.heading.3.markdown"] 		= 	{ fg = syntax_blue },
+  ["@markup.heading.4.markdown"] 		= 	{ fg = syntax_blue },
 
-	-- lsp
 	["@lsp.typemod.method.definition.go"] 		= 	{ fg = syntax_blue, bg = "NONE" },
   ["@lsp.typemod.function.definition.go"] 	= 	{ fg = syntax_blue, bg = "NONE" },
 	["@lsp.typemod.method.definition.zig"] 		= 	{ fg = syntax_blue, bg = "NONE" },
   ["@lsp.typemod.function.definition.zig"] 	= 	{ fg = syntax_blue, bg = "NONE" },
-
   ["@lsp.typemod.variable.readonly.go"] 		= 	{ fg = syntax_pink, bg = "NONE" },
   ["@lsp.typemod.variable.readonly.zig"] 		= 	{ fg = syntax_pink, bg = "NONE" },
+  -- ["@lsp.typemod.variable.definition.go"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
+  -- ["@lsp.typemod.variable.definition.zig"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
 
-  ["@lsp.typemod.variable.definition.go"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
-  ["@lsp.typemod.variable.definition.zig"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
+	-- diagnostics
+  DiagnosticError 					= { fg = red },
+	DiagnosticInfo						= { fg = blue },
+  DiagnosticWarn						= { fg = orange },
+  DiagnosticUnderlineError	= { fg = ui_white, underline = true, sp = red },
+	DiagnosticUnderlineInfo		= { fg = ui_white, underline = true, sp = blue },
+	DiagnosticUnderlineWarn		= { fg = ui_white, underline = true, sp = orange },
 
 	-- git
   DiffText	 		=		{ fg = blue },
@@ -100,6 +100,17 @@ local highlight_groups = {
   Removed 			= 	{ fg = red, bg = "NONE" },
 	diffOldFile		= 	{ fg = syntax_gray, bg = "NONE" },
 	diffNewFile		=		{ fg = syntax_gray, bg = "NONE" },
+
+	-- plugins
+	NeoTreeGitUntracked = { fg = orange, italic = false },
+	NeoTreeFileName = { fg = ui_white_dimmed },
+	NeoTreeGitConflict = { fg = purple },
+	NeoTreeCursorLine = { bg = ui_gray_dark },
+
+	GrugFarResultsMatch = { fg = ui_black, bg = ui_yellow },
+	GrugFarHelpHeader = { fg = ui_white },
+	GrugFarResultsActionMessage = { fg = ui_white },
+	GrugFarResultsPath = { bg = ui_gray_dark },
 }
 
 for group, opts in pairs(highlight_groups) do

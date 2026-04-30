@@ -48,8 +48,6 @@ autocmd('LspAttach', {
 	callback = function(ev)
 		vim.keymap.set('n', '<C-o>', vim.lsp.buf.definition, { buffer = ev.buf })
 		vim.keymap.set('n', '<C-t>', vim.lsp.buf.type_definition, { buffer = ev.buf })
-		vim.keymap.set('n', '<C-r>', vim.lsp.buf.references, { buffer = ev.buf })
-		vim.keymap.set('n', '<C-i>', vim.lsp.buf.implementation, { buffer = ev.buf })
 		vim.keymap.set('n', '<leader>rr', vim.lsp.buf.rename, { buffer = ev.buf })
 		vim.keymap.set('n', 'g.', vim.lsp.buf.code_action, { buffer = ev.buf })
 		vim.keymap.set('n', 'g,', vim.lsp.codelens.run, { buffer = ev.buf })

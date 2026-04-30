@@ -21,4 +21,13 @@ vim.lsp.config("gopls", {
 
 vim.lsp.enable("gopls")
 
+vim.lsp.config("lua_ls", {
+		cmd = { 'lua-language-server' },
+    filetypes = { 'lua' },
+    root_markers = { '.git', '.luarc.json', '.luarc.jsonc' },
+    capabilities = require('blink.cmp').get_lsp_capabilities(),
+})
+
+vim.lsp.enable("lua_ls")
+
 vim.diagnostic.config({ underline = true, virtual_text = true, virtual_lines = true, signs = false })

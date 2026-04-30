@@ -21,12 +21,16 @@ vim.keymap.set("n", "gco", ':GitConflictChooseOurs<CR>')
 vim.keymap.set("n", "gct", ':GitConflictChooseTheir<CR>')
 vim.keymap.set("n", "gcb", ':GitConflictChooseBoth<CR>')
 
+vim.keymap.set('n', 'fs', ':GrugFar<CR>', { silent = true })
+
 vim.keymap.set('n', 'fg', ':FzfLua git_status<CR>', { silent = true })
 vim.keymap.set('n', 'ff', ':FzfLua files<CR>', { silent = true })
-vim.keymap.set('n', 'fs', ':FzfLua live_grep<CR>', { silent = true })
 vim.keymap.set('n', 'fw', ':FzfLua grep_cword<CR>', { silent = true })
 vim.keymap.set('n', 'fd', ':FzfLua diagnostics_workspace<CR>', { silent = true })
 vim.keymap.set('n', 'fb', ':FzfLua buffers<CR>', { silent = true })
+
+vim.keymap.set('n', '<C-i>', ':FzfLua lsp_implementations<CR>', { silent = true })
+vim.keymap.set('n', '<C-r>', ':FzfLua lsp_references<CR>', { silent = true })
 
 vim.keymap.set("n", "<S-k>", function()
   local cursor_pos = vim.api.nvim_win_get_cursor(0)
