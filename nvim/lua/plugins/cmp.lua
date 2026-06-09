@@ -7,6 +7,20 @@ return {
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
     },
+		completion = {
+			documentation = {
+				auto_show = true,
+				treesitter_highlighting = false
+			},
+			menu = {
+				draw = {
+					columns = {
+            { "kind_icon" },
+            { "label", "label_description", gap = 1 },
+          },
+				}
+			}
+		},
     fuzzy = { implementation = "prefer_rust_with_warning" }
   },
   opts_extend = { "sources.default" }

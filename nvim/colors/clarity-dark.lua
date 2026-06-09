@@ -67,8 +67,8 @@ local highlight_groups = {
   ["@error"] 		= 	{ fg = red, sp = dark_orange, undercurl = true },
   ["@spell"] 		= 	{ fg = syntax_gray, bg = "NONE" },
   ["@spell.markdown"] 		= 	{ fg = ui_white, bg = "NONE" },
-  ["@markup.raw.block.markdown"] 		= 	{ bg = ui_black_soft },
-  ["@markup.raw.markdown_inline"] 		= 	{ bg = ui_black_soft },
+  -- ["@markup.raw.block.markdown"] 		= 	{ bg = ui_black_soft },
+  -- ["@markup.raw.markdown_inline"] 		= 	{ bg = ui_black_soft },
   ["@markup.heading.1.markdown"] 		= 	{ fg = syntax_blue },
   ["@markup.heading.2.markdown"] 		= 	{ fg = syntax_blue },
   ["@markup.heading.3.markdown"] 		= 	{ fg = syntax_blue },
@@ -102,7 +102,7 @@ local highlight_groups = {
 	diffNewFile		=		{ fg = syntax_gray, bg = "NONE" },
 
 	-- plugins
-	NeoTreeGitUntracked = { fg = orange, italic = false },
+	NeoTreeGitUntracked = { fg = green, italic = false },
 	NeoTreeFileName = { fg = ui_white_dimmed },
 	NeoTreeGitConflict = { fg = purple },
 	NeoTreeCursorLine = { bg = ui_gray_dark },
