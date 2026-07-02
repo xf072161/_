@@ -18,7 +18,6 @@ vim.lsp.config("gopls", {
       },
     },
 })
-
 vim.lsp.enable("gopls")
 
 vim.lsp.config("lua_ls", {
@@ -27,7 +26,15 @@ vim.lsp.config("lua_ls", {
     root_markers = { '.git', '.luarc.json', '.luarc.jsonc' },
     capabilities = require('blink.cmp').get_lsp_capabilities(),
 })
-
 vim.lsp.enable("lua_ls")
+
+
+vim.lsp.config("rust_analyzer", {
+	cmd = { "rust-analyzer" },
+	filetypes = { "rust" },
+	root_markers = { "Cargo.toml", "rust-project.json" },
+	capabilities = require('blink.cmp').get_lsp_capabilities(),
+})
+vim.lsp.enable("rust_analyzer")
 
 vim.diagnostic.config({ underline = true, virtual_text = true, virtual_lines = true, signs = false })

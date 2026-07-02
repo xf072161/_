@@ -4,7 +4,7 @@ foreground = #D3CEBA
 cursor-color = #D3CEBA
 cursor-style = block
 
-macos-titlebar-style = tabs
+macos-titlebar-style = native
 shell-integration-features = no-cursor,ssh-terminfo
 
 font-family = "MonoLisa"

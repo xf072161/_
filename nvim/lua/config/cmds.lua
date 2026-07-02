@@ -46,6 +46,7 @@ autocmd('LspAttach', {
 	group = augroup('UserLspConfig', {}),
 
 	callback = function(ev)
+		vim.lsp.inlay_hint.enable(true, { bufnr = ev.buf })
 		vim.keymap.set('n', '<C-o>', vim.lsp.buf.definition, { buffer = ev.buf })
 		vim.keymap.set('n', '<C-t>', vim.lsp.buf.type_definition, { buffer = ev.buf })
 		vim.keymap.set('n', '<leader>rr', vim.lsp.buf.rename, { buffer = ev.buf })

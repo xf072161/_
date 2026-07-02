@@ -1,0 +1,10 @@
+[
+  {
+    "label": "Run server",
+    "adapter": "Delve",
+    "request": "launch",
+    "mode": "debug",
+    "program": "./cmd/online-pay",
+    "envFile": ".env"
+  }
+]

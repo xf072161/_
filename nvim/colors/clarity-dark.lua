@@ -82,6 +82,8 @@ local highlight_groups = {
   ["@lsp.typemod.variable.readonly.zig"] 		= 	{ fg = syntax_pink, bg = "NONE" },
   -- ["@lsp.typemod.variable.definition.go"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
   -- ["@lsp.typemod.variable.definition.zig"] 	= 	{ fg = syntax_yellow, bg = "NONE" },
+	--
+	LspInlayHint = { fg = ui_gray_dark },
 
 	-- diagnostics
   DiagnosticError 					= { fg = red },
