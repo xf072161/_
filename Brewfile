@@ -1,5 +1,7 @@
 brew "ripgrep"
 brew "neovim"
+brew "btop"
+brew "hunk"
 brew "fzf"
 brew "jq"
 brew "go"

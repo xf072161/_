@@ -1,4 +1,4 @@
-vim.cmd.colorscheme('clarity-dark')
+vim.cmd.colorscheme('forest')
 
 -- don't wrap long lines
 vim.wo.wrap = false

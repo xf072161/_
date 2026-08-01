@@ -1,22 +1,24 @@
 {
   "theme": {
-    "mode": "dark",
-    "light": "clarity light",
-    "dark": "clarity dark",
+    "mode": "light",
+    "light": "Gruvbox Light Soft",
+    "dark": "Gruvbox Dark Soft"
   },
   "disable_ai": true,
   "vim_mode": true,
   "cursor_blink": false,
   "tab_size": 2,
   "ui_font_family": "MonoLisa",
-  "ui_font_size": 14,
+  "ui_font_size": 15,
   "buffer_font_family": "MonoLisa",
   "buffer_font_size": 14,
+  "wrap_guides": [120],
   "show_whitespaces": "none",
+  "hide_mouse": "never",
   "languages": {
     "Go": {
-      "tab_size": 4,
-    },
+      "tab_size": 4
+    }
   },
   "lsp": {
     "gopls": {
@@ -25,31 +27,31 @@
         "staticcheck": true,
         "analyses": {
           "unusedparams": true,
-          "ST1000": false,
+          "ST1000": false
         },
         "codelenses": {
-          "test": true,
+          "test": true
         },
-        "buildFlags": ["-tags=acceptance,functional"],
-      },
-    },
+        "buildFlags": ["-tags=acceptance,functional"]
+      }
+    }
   },
   "diagnostics": {
-    "inline": { "enabled": true },
+    "inline": { "enabled": true }
   },
   "project_panel": {
     "dock": "left",
     "indent_guides": { "show": "never" },
-    "scrollbar": { "show": "never" },
+    "scrollbar": { "show": "never" }
   },
   "title_bar": {
     "show_sign_in": false,
-    "show_user_menu": false,
+    "show_user_menu": false
   },
   "status_bar": { "experimental.show": false },
   "toolbar": { "quick_actions": false },
   "tab_bar": { "show": false },
   "indent_guides": { "enabled": false },
   "buffer_font_features": { "liga": false },
-  "vim": { "use_system_clipboard": "never" },
+  "vim": { "use_system_clipboard": "never" }
 }

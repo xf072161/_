@@ -24,7 +24,7 @@ vim.keymap.set("n", "gcb", ':GitConflictChooseBoth<CR>')
 vim.keymap.set('n', 'fs', ':GrugFar<CR>', { silent = true })
 
 vim.keymap.set('n', 'fg', ':FzfLua git_status<CR>', { silent = true })
-vim.keymap.set('n', 'ff', ':FzfLua files<CR>', { silent = true })
+vim.keymap.set('n', 'ff', ':FzfLua files line_query=true<CR>', { silent = true })
 vim.keymap.set('n', 'fw', ':FzfLua grep_cword<CR>', { silent = true })
 vim.keymap.set('n', 'fd', ':FzfLua diagnostics_workspace<CR>', { silent = true })
 vim.keymap.set('n', 'fb', ':FzfLua buffers<CR>', { silent = true })

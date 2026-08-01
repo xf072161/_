@@ -4,7 +4,7 @@
     "adapter": "Delve",
     "request": "launch",
     "mode": "debug",
-    "program": "./cmd/online-pay",
+    "program": "./cmd/app",
     "envFile": ".env"
   }
 ]
