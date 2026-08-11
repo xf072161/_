@@ -1,7 +1,8 @@
 {
+  "diff_view_style": "unified",
   "theme": {
-    "mode": "light",
-    "light": "Gruvbox Light Soft",
+    "mode": "dark",
+    "light": "Gruvbox Light",
     "dark": "Gruvbox Dark Soft"
   },
   "disable_ai": true,
