@@ -1,1 +1,3 @@
-.luarc.json
+*.luarc.json
+*lock.json
+*state.json

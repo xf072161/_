@@ -12,3 +12,5 @@ keybind = cmd+shift+]=next_tab
 keybind = cmd+[=goto_split:next
 keybind = cmd+]=goto_split:previous
 keybind = ctrl+tab=text:\x1b[9;5u
+
+auto-update-channel = tip

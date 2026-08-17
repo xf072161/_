@@ -31,6 +31,7 @@ sm() {
 
 sm "$DOTFILES/.zshrc" "$HOME/.zshrc"
 sm "$DOTFILES/nvim" "$HOME/.config/nvim"
+sm "$DOTFILES/hunk" "$HOME/.config/hunk"
 sm "$DOTFILES/ghostty" "$HOME/.config/ghostty/config"
 sm "$DOTFILES/.zed/keymap.json" "$HOME/.config/zed/keymap.json"
 sm "$DOTFILES/.zed/settings.json" "$HOME/.config/zed/settings.json"
